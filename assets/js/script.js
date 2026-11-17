@@ -41,7 +41,10 @@ class LibroDigitale extends Libro {
   }
 }
 
-
+const STORAGE_KEY = "libri";
+function salvaLibri() {
+    
+}
 
 
 // === Stato (array di libri) ===
