@@ -144,8 +144,55 @@ body {
   border-color: hsl(140, 50%, 35%);
 }
 
+
+/* === Nuovo D2: header lista + svuota tutto === */
+
+.lista-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.lista-header h2 {
+  margin: 0;
+}
+
+.btn-svuota {
+  background: none;
+  border: 1px solid #c44;
+  color: #c44;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-svuota:hover {
+  background: #c44;
+  color: white;
+}
+
+.info-storage {
+  margin: 0 0 16px;
+  color: #666;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.azioni button + button {
+  margin-left: 6px;
+}
+
+.azioni span {
+  color: hsl(140, 50%, 35%);
+  font-weight: bold;
+  margin-right: 8px;
+}
+
 .lista-libri li.vuota {
   justify-content: center;
   color: #888;
   font-style: italic;
 }
+

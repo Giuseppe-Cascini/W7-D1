@@ -163,6 +163,20 @@ document.getElementById("lista-libri").addEventListener("click", (e) => {
   salvaLibri();
 });
 
+// Bottone "Svuota tutto"
+document.getElementById("svuota-tutto").addEventListener("click", () => {
+  libri = [];
+  localStorage.removeItem(STORAGE_KEY);
+  renderLibri();
+});
+
+// Un'altra tab ha modificato localStorage: ricarichiamo la lista (evento storage)
+window.addEventListener("storage", (e) => {
+  if (e.key !== STORAGE_KEY && e.key !== null) return;
+  libri = caricaLibri();
+  renderLibri();
+});
+
 
 // === Avvio ===
 renderLibri();
