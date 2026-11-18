@@ -71,6 +71,21 @@ function caricaLibri() {
 
 let libri = caricaLibri(); // let: l'EXTRA "Rimuovi" riassegna l'array con filter
 
+// === Funzioni helper ===
+function mostraSpinner() {
+document.getElementById("spinner").hidden = false;
+document.getElementById("errore").hidden = true;
+
+}
+
+function nascondiSpinner() {
+document.getElementById("spinner").hidden = true;
+}
+
+function mostraErrore(msg) {
+document.getElementById(errore).textContent = "msg"
+document.getElementById("errore").hidden = false;
+}
 
 // === Render ===
 
